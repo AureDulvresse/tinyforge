@@ -28,21 +28,26 @@ Serveur Web : Apache, Nginx ou serveur intégré PHP pour le développement.
 1. Installez TinyForge avec Composer :
 Ouvrez un terminal et exécutez la commande suivante :
 
-``bash
-composer create-project tinyforge/tinyforge nom-du-projet``
+```bash
+composer create-project tinyforge/tinyforge nom-du-projet```
 
 2. Accédez au répertoire du projet :
 
+```bash
 cd nom-du-projet
+```
 
 
 3. Configurez votre fichier .env :
 TinyForge utilise un fichier .env pour gérer les variables d'environnement. Renommez le fichier .env.example en .env et modifiez-le en fonction de votre environnement :
 
+```bash
 cp .env.example .env
+```
 
 Exemple de contenu à adapter :
 
+```env
 APP_NAME=TinyForge
 APP_ENV=local
 APP_KEY=
@@ -55,7 +60,7 @@ DB_PORT=3306
 DB_DATABASE=nom_base
 DB_USERNAME=utilisateur
 DB_PASSWORD=motdepasse
-
+```
 
 4. Générez une clé d'application unique :
 TinyForge nécessite une clé unique pour sécuriser certaines fonctionnalités.
