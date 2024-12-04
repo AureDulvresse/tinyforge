@@ -28,9 +28,8 @@ Serveur Web : Apache, Nginx ou serveur intégré PHP pour le développement.
 1. Installez TinyForge avec Composer :
 Ouvrez un terminal et exécutez la commande suivante :
 
-``bash
-composer create-project tinyforge/tinyforge nom-du-projet
-``
+`bash
+composer create-project tinyforge/tinyforge nom-du-projet``
 
 2. Accédez au répertoire du projet :
 
