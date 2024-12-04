@@ -34,8 +34,7 @@ composer create-project tinyforge/tinyforge nom-du-projet```
 2. Accédez au répertoire du projet :
 
 ```bash
-cd nom-du-projet
-```
+cd nom-du-projet```
 
 
 3. Configurez votre fichier .env :
