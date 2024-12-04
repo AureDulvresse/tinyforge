@@ -31,7 +31,7 @@ Ouvrez un terminal et exécutez la commande suivante :
 ``bash 
 
 composer create-project tinyforge/tinyforge nom-du-projet
-``
+bash``
 
 2. Accédez au répertoire du projet :
 
