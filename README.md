@@ -41,8 +41,7 @@ cd nom-du-projet```
 TinyForge utilise un fichier .env pour gérer les variables d'environnement. Renommez le fichier .env.example en .env et modifiez-le en fonction de votre environnement :
 
 ```bash
-cp .env.example .env
-```
+cp .env.example .env```
 
 Exemple de contenu à adapter :
 
@@ -58,25 +57,27 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=nom_base
 DB_USERNAME=utilisateur
-DB_PASSWORD=motdepasse
-```
+DB_PASSWORD=motdepasse```
 
 4. Générez une clé d'application unique :
 TinyForge nécessite une clé unique pour sécuriser certaines fonctionnalités.
 
-php forge key:generate
+```bash
+php forge key:generate```
 
 
 5. Configurez la base de données et exécutez les migrations :
 Assurez-vous que votre base de données est configurée et accessible, puis lancez les migrations pour créer les tables nécessaires :
 
-php forge migrate
+```bash
+php forge migrate```
 
 
 6. Démarrez le serveur de développement intégré :
 Une fois tout configuré, vous pouvez lancer le serveur local avec :
 
-php forge serve
+```bash
+php forge serve```
 
 Votre application sera accessible à http://localhost:8000.
 
@@ -111,8 +112,9 @@ nom-du-projet/
 ├── composer.json
 └── forge (CLI)
 
-Dossiers principaux :
+## Dossiers principaux :
 
+```
 app/ : Contient les contrôleurs, modèles, et vues de l'application.
 
 config/ : Regroupe tous les fichiers de configuration.
@@ -124,67 +126,75 @@ routes/ : Définit les routes de l'application.
 public/ : Fichiers accessibles publiquement (CSS, JS, index.php).
 
 storage/ : Fichiers de logs, caches, et uploads temporaires.
+```
 
 
 
 ---
 
-Commandes CLI
+## Commandes CLI
 
 TinyForge propose une interface CLI simplifiée via le fichier forge. Voici quelques commandes utiles :
 
-Clé d'application
+### Clé d'application
 
 Générer une nouvelle clé d'application :
 
-php forge key:generate
+```bash
+php forge key:generate```
 
 
 Migration
 
 Exécuter les migrations :
 
-php forge migrate
+```bash
+php forge migrate```
 
 Annuler la dernière migration :
 
-php forge migrate:rollback
+```bash
+php forge migrate:rollback```
 
 
 Serveur de développement
 
 Lancer le serveur local :
 
-php forge serve
+```bash
+php forge serve```
 
 
 Autres commandes
 
 Pour voir toutes les commandes disponibles :
 
-php forge list
+```bash
+php forge list```
 
 
 ---
 
-Développement
+## Développement
 
-Routes
+### Routes
 
 Les routes de l'application sont définies dans le fichier routes/web.php. Voici un exemple simple :
 
+```php
 use Core\Routing\Route;
 
 Route::get('/', function () {
     return 'Bienvenue sur TinyForge !';
 });
 
-Route::post('/products', [ProductController, 'submit']);
+Route::post('/products', [ProductController, 'submit']);```
 
-Contrôleurs
+### Contrôleurs
 
 Les contrôleurs sont stockés dans le dossier app/Controllers. Exemple de création :
 
+```php
 namespace App\Controllers;
 
 use tinyforge\http\controller;
@@ -197,12 +207,13 @@ class ProductController extends Controller
         $data = Product::all()
         return $this->view(request, 'product.index', $data);
     }
-}
+}```
 
-Modèles
+### Modèles
 
 Les modèles représentent les tables de la base de données et sont situés dans app/Models. Exemple :
 
+```php
 namespace App\Models;
 
 use TinyForge\Iron\Database\Model;
@@ -210,12 +221,11 @@ use TinyForge\Iron\Database\Model;
 class Product extends Model
 {
     protected $table = 'products';
-}
-
+}```
 
 ---
 
-Contributions
+## Contributions
 
 Soumettre des modifications
 
