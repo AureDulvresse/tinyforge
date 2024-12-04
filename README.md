@@ -1,11 +1,11 @@
-TinyForge Documentation
+# TinyForge Documentation
 
 TinyForge est un framework minimaliste en PHP conçu pour créer rapidement des applications web comme des e-commerces, des blogs, des systèmes e-learning, et bien plus encore. Son objectif est de fournir une solution modulaire, légère et extensible pour répondre aux besoins spécifiques des développeurs.
 
 
 ---
 
-Installation
+## Installation
 
 Prérequis
 
@@ -23,7 +23,7 @@ Serveur Web : Apache, Nginx ou serveur intégré PHP pour le développement.
 
 ---
 
-Étapes d'installation
+## Étapes d'installation
 
 1. Installez TinyForge avec Composer :
 Ouvrez un terminal et exécutez la commande suivante :
@@ -81,7 +81,7 @@ Votre application sera accessible à http://localhost:8000.
 
 ---
 
-Structure du Projet
+## Structure du Projet
 
 Voici un aperçu de la structure par défaut de TinyForge :
 
@@ -175,7 +175,7 @@ Route::get('/', function () {
     return 'Bienvenue sur TinyForge !';
 });
 
-Route::post('/formulaire', 'FormController@submit');
+Route::post('/products', [ProductController, 'submit']);
 
 Contrôleurs
 
@@ -183,11 +183,15 @@ Les contrôleurs sont stockés dans le dossier app/Controllers. Exemple de créa
 
 namespace App\Controllers;
 
-class FormController
+use tinyforge\http\controller;
+use App\Model\Product;
+
+class ProductController extends Controller
 {
-    public function submit()
+    public function index(request)
     {
-        return 'Formulaire soumis avec succès !';
+        $data = Product::all()
+        return $this->view(request, 'product.index', $data);
     }
 }
 
@@ -197,11 +201,11 @@ Les modèles représentent les tables de la base de données et sont situés dan
 
 namespace App\Models;
 
-use Core\Database\Model;
+use TinyForge\Iron\Database\Model;
 
-class User extends Model
+class Product extends Model
 {
-    protected $table = 'users';
+    protected $table = 'products';
 }
 
 
@@ -233,4 +237,5 @@ Ressources
 Dépôt GitHub : https://github.com/tinyforge/tinyforge
 
 Issues : Utilisez la section Issues sur GitHub pour signaler des bugs ou demander des fonctionnalités.
+
 
