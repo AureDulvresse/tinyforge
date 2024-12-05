@@ -2,7 +2,6 @@
 
 **TinyForge** est un framework minimaliste en PHP conçu pour développer rapidement des applications web telles que des e-commerces, des blogs, des systèmes e-learning, et bien plus encore. Il est modulaire, léger et extensible, répondant aux besoins spécifiques des développeurs.
 
-
 ## **Installation**
 
 ### **Prérequis**
@@ -79,13 +78,11 @@ Avant d’installer TinyForge, assurez-vous que les outils suivants sont install
 
    Votre application sera accessible à [http://localhost:8000](http://localhost:8000).
 
-
-
 ## **Structure du Projet**
 
 Voici un aperçu de l’arborescence de TinyForge :
 
-```
+```text
 nom-du-projet/
 ├── app/
 │   ├── Controllers/   # Contrôleurs de l'application
@@ -115,25 +112,29 @@ TinyForge propose une interface en ligne de commande simplifiée via le fichier 
 
 - **Gestion des migrations** :
   - Exécuter les migrations :  
+
     ```bash
     php forge migrate
     ```
+
   - Annuler la dernière migration :  
+
     ```bash
     php forge migrate:rollback
     ```
 
 - **Démarrer un serveur local** :  
+
   ```bash
   php forge serve
   ```
 
 - **Afficher la liste des commandes disponibles** :  
+
   ```bash
   php forge list
   ```
   
-
 ## **Développement**
 
 ### **Définir les Routes**
@@ -203,17 +204,17 @@ Les fichiers de configuration sont regroupés dans le dossier `/config` :
 - **`admin.php`** : Options de l’interface d’administration.
 - **`ember.php`** : Configuration du CMS intégré.
 
-
-
 ## **Contribution**
 
 Vous souhaitez contribuer à TinyForge ? Voici les étapes :
 
 1. **Forker le projet** : Forkez le dépôt GitHub officiel.
 2. **Créer une branche** : Travaillez sur une nouvelle fonctionnalité ou correction.
+
    ```bash
    git checkout -b ma-branche
    ```
+
 3. **Soumettre une Pull Request** : Proposez vos changements pour examen.
 
 ---
