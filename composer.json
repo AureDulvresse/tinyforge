@@ -1,0 +1,34 @@
+{
+    "name": "tinyforge/tinyforge",
+    "description": "TinyForge Framework",
+    "type": "library",
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "symfony/mailer": "^7.1",
+        "phpauth/phpauth": "^1.5",
+        "twig/twig": "^3.15",
+        "symfony/twig-bundle": "^7.1",
+        "symfony/ux-twig-component": "^2.21",
+        "stripe/stripe-php": "^16.3",
+        "fakerphp/faker": "^1.24",
+        "symfony/console": "^7.1",
+        "nesbot/carbon": "^3.8",
+        "tinyforge/common": "^1.0",
+        "tinyforge/iron": "^1.0",
+        "symfony/http-foundation": "^7.1",
+        "symfony/asset": "^7.1",
+        "tinyforge/cli": "^1.5"
+    },
+    "license": "BSD-3-Clause",
+    "autoload": {
+        "psr-4": {
+            "Tinyforge\\Tinyforge\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aure",
+            "email": "147180124+AureDulvresse@users.noreply.github.com"
+        }
+    ]
+}
