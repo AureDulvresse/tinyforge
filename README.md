@@ -1,7 +1,3 @@
-Voici une version adaptée et cohérente de la documentation pour TinyForge :
-
----
-
 # **TinyForge Documentation**
 
 **TinyForge** est un framework minimaliste en PHP conçu pour développer rapidement des applications web telles que des e-commerces, des blogs, des systèmes e-learning, et bien plus encore. Il est modulaire, léger et extensible, répondant aux besoins spécifiques des développeurs.
