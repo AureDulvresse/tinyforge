@@ -14,8 +14,6 @@ Avant d’installer TinyForge, assurez-vous que les outils suivants sont install
 - **Base de données** : MySQL, MariaDB ou PostgreSQL.
 - **Serveur web** : Apache, Nginx, ou le serveur intégré PHP pour le développement.
 
----
-
 ### **Étapes d'installation**
 
 1. **Installer TinyForge avec Composer**  
@@ -81,7 +79,7 @@ Avant d’installer TinyForge, assurez-vous que les outils suivants sont install
 
    Votre application sera accessible à [http://localhost:8000](http://localhost:8000).
 
----
+
 
 ## **Structure du Projet**
 
@@ -104,8 +102,6 @@ nom-du-projet/
 ├── composer.json      # Dépendances PHP
 └── forge              # CLI de TinyForge
 ```
-
----
 
 ## **Commandes CLI**
 
@@ -136,8 +132,7 @@ TinyForge propose une interface en ligne de commande simplifiée via le fichier 
   ```bash
   php forge list
   ```
-
----
+  
 
 ## **Développement**
 
@@ -197,8 +192,6 @@ class Product extends Model
 }
 ```
 
----
-
 ## **Configuration**
 
 Les fichiers de configuration sont regroupés dans le dossier `/config` :
@@ -210,7 +203,7 @@ Les fichiers de configuration sont regroupés dans le dossier `/config` :
 - **`admin.php`** : Options de l’interface d’administration.
 - **`ember.php`** : Configuration du CMS intégré.
 
----
+
 
 ## **Contribution**
 
