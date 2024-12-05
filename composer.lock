@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c78fe727c656080e6cf932c7859cfb7",
+    "content-hash": "1cb1b293e068f8d42a9ad5da57ffddbc",
     "packages": [
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -3838,6 +3838,47 @@
                 }
             ],
             "time": "2024-10-18T07:58:17+00:00"
+        },
+        {
+            "name": "tinyforge/alloy",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AureDulvresse/tinyforge-alloy.git",
+                "reference": "22198230af9c8c3375024d59fbc81e46606e8129"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AureDulvresse/tinyforge-alloy/zipball/22198230af9c8c3375024d59fbc81e46606e8129",
+                "reference": "22198230af9c8c3375024d59fbc81e46606e8129",
+                "shasum": ""
+            },
+            "require": {
+                "tinyforge/cli": "^1.1",
+                "tinyforge/common": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Forge\\Alloy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aure",
+                    "email": "147180124+AureDulvresse@users.noreply.github.com"
+                }
+            ],
+            "description": "Orchestor for TinyForge framework",
+            "support": {
+                "issues": "https://github.com/AureDulvresse/tinyforge-alloy/issues",
+                "source": "https://github.com/AureDulvresse/tinyforge-alloy/tree/1.0.0"
+            },
+            "time": "2024-11-24T21:23:58+00:00"
         },
         {
             "name": "tinyforge/cli",

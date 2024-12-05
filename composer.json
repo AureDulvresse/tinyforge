@@ -17,7 +17,8 @@
         "tinyforge/iron": "^1.0",
         "symfony/http-foundation": "^7.1",
         "symfony/asset": "^7.1",
-        "tinyforge/cli": "^1.5"
+        "tinyforge/cli": "^1.5",
+        "tinyforge/alloy": "^1.0"
     },
     "license": "BSD-3-Clause",
     "autoload": {
